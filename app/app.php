@@ -21,10 +21,14 @@
                 <p>Looking forward to seeing you soon. I'll bring you back a souvenir. </p>
                 <p>Cheers,</p>
                 <p>Travel Enthusiast Katy</p>
+                <a href='/goodbye'>Goodbye!</a>
             </div>
         </body>
-        </html>"
-        ;
+        </html>";
+    });
+
+    $app->get("/goodbye", function() {
+        return "Goodbye friend!";
     });
 
     return $app;
